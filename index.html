@@ -138,8 +138,8 @@
     @media (max-width: 680px) { .letter-body { grid-template-columns: 1fr; } }
 
     /* ── Scan panel ── */
-    .scan-panel { border-right: 1px solid var(--rule); padding: 24px; background: var(--aged); display: flex; flex-direction: column; align-items: center; gap: 12px; }
-    .scan-frame { width: 100%; border: 1px solid var(--sepia); position: relative; overflow: hidden; box-shadow: 2px 2px 8px rgba(0,0,0,0.25); line-height: 0; }
+    .scan-panel { border-right: 1px solid var(--rule); padding: 0; background: #1a1208; display: flex; flex-direction: column; align-items: stretch; }
+    .scan-frame { width: 100%; position: relative; overflow: hidden; line-height: 0; }
     .scan-sim { width: 100%; height: 100%; background: linear-gradient(160deg,#f0e8d0 60%,#e8dcc0 100%); display: flex; flex-direction: column; padding: 20px; gap: 6px; }
     .sim-date { font-family: 'Courier Prime', monospace; font-size: 0.75rem; text-align: right; color: #5a4a2a; margin-bottom: 8px; }
     .sim-greeting { font-family: 'IM Fell English', serif; font-style: italic; font-size: 0.85rem; color: #3a2a10; margin-bottom: 6px; }
@@ -154,7 +154,7 @@
     .scan-link { display: inline-block; font-family: 'Courier Prime', monospace; font-size: 0.65rem; letter-spacing: 0.1em; text-transform: uppercase; padding: 4px 12px; background: transparent; border: 1px solid var(--sepia); color: var(--sepia); text-decoration: none; transition: all 0.15s; margin-top: 4px; }
     .scan-link:hover { background: var(--sepia); color: var(--paper); }
     .scan-panel-link { display: contents; }
-    .scan-frame-linked { cursor: pointer; position: relative; display: block; }
+    .scan-frame-linked { cursor: pointer; position: relative; display: block; width: 100%; }
     .scan-frame-linked::after { content: 'Click for Full Scan'; position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; background: rgba(26,18,8,0.28); font-family: 'Courier Prime', monospace; font-size: 0.7rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--paper); text-shadow: 0 1px 3px rgba(0,0,0,0.8); transition: background 0.2s; }
     .scan-frame-linked:hover::after { background: rgba(26,18,8,0.5); }
 
