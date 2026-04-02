@@ -134,12 +134,12 @@
     .letter-status { font-family: 'Courier Prime', monospace; font-size: 0.65rem; letter-spacing: 0.1em; padding: 3px 10px; border: 1px solid; }
     .letter-status.complete   { color: #6aab6a; border-color: #6aab6a; }
     .letter-status.incomplete { color: var(--red); border-color: var(--red); }
-    .letter-body { display: grid; grid-template-columns: 1fr 1fr; }
+    .letter-body { display: grid; grid-template-columns: 1fr 1fr; align-items: start; }
     @media (max-width: 680px) { .letter-body { grid-template-columns: 1fr; } }
 
     /* ── Scan panel ── */
-    .scan-panel { border-right: 1px solid var(--rule); padding: 0; background: var(--aged); display: flex; flex-direction: column; }
-    .scan-frame { width: 100%; flex: 1; min-height: 300px; position: relative; overflow: hidden; line-height: 0; }
+    .scan-panel { border-right: 1px solid var(--rule); padding: 0; background: var(--aged); }
+    .scan-frame { width: 100%; position: relative; overflow: hidden; line-height: 0; }
     .scan-sim { width: 100%; height: 100%; background: linear-gradient(160deg,#f0e8d0 60%,#e8dcc0 100%); display: flex; flex-direction: column; padding: 20px; gap: 6px; }
     .sim-date { font-family: 'Courier Prime', monospace; font-size: 0.75rem; text-align: right; color: #5a4a2a; margin-bottom: 8px; }
     .sim-greeting { font-family: 'IM Fell English', serif; font-style: italic; font-size: 0.85rem; color: #3a2a10; margin-bottom: 6px; }
@@ -154,7 +154,7 @@
     .scan-link { display: inline-block; font-family: 'Courier Prime', monospace; font-size: 0.65rem; letter-spacing: 0.1em; text-transform: uppercase; padding: 4px 12px; background: transparent; border: 1px solid var(--sepia); color: var(--sepia); text-decoration: none; transition: all 0.15s; margin-top: 4px; }
     .scan-link:hover { background: var(--sepia); color: var(--paper); }
     .scan-panel-link { display: contents; }
-    .scan-frame-linked { cursor: pointer; position: relative; display: block; width: 100%; height: 100%; }
+    .scan-frame-linked { cursor: pointer; display: block; width: 100%; }
     .scan-frame-linked::after { content: 'Click for Full Scan'; position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; background: rgba(26,18,8,0.28); font-family: 'Courier Prime', monospace; font-size: 0.7rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--paper); text-shadow: 0 1px 3px rgba(0,0,0,0.8); transition: background 0.2s; }
     .scan-frame-linked:hover::after { background: rgba(26,18,8,0.5); }
 
@@ -475,7 +475,7 @@
     </div>
     <div class="letter-body">
       <div class="scan-panel">
-        <a href="https://chrislitzkow.github.io/Litzkow-Letters/1944.August.15.SmallFry.Slugger.pdf" target="_blank" class="scan-frame scan-frame-linked"><img src="https://chrislitzkow.github.io/Litzkow-Letters/thumbs/1944.August.15.SmallFry.Slugger.jpg" alt="Scan of 1944.August.15.SmallFry.Slugger" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block;"></a>
+        <a href="https://chrislitzkow.github.io/Litzkow-Letters/1944.August.15.SmallFry.Slugger.pdf" target="_blank" class="scan-frame scan-frame-linked"><img src="https://chrislitzkow.github.io/Litzkow-Letters/thumbs/1944.August.15.SmallFry.Slugger.jpg" alt="Scan of 1944.August.15.SmallFry.Slugger" style="width:100%;height:auto;display:block;"></a>
       </div>
       <div class="transcription-panel">
         <div class="trans-heading">Transcription</div>
@@ -518,7 +518,7 @@
     </div>
     <div class="letter-body">
       <div class="scan-panel">
-        <a href="https://chrislitzkow.github.io/Litzkow-Letters/1945.March.28.Jim.Lorraine.pdf" target="_blank" class="scan-frame scan-frame-linked"><img src="https://chrislitzkow.github.io/Litzkow-Letters/thumbs/1945.March.28.Jim.Lorraine.jpg" alt="Scan of 1945.March.28.Jim.Lorraine" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block;"></a>
+        <a href="https://chrislitzkow.github.io/Litzkow-Letters/1945.March.28.Jim.Lorraine.pdf" target="_blank" class="scan-frame scan-frame-linked"><img src="https://chrislitzkow.github.io/Litzkow-Letters/thumbs/1945.March.28.Jim.Lorraine.jpg" alt="Scan of 1945.March.28.Jim.Lorraine" style="width:100%;height:auto;display:block;"></a>
       </div>
       <div class="transcription-panel">
         <div class="trans-heading">Transcription</div>
@@ -558,7 +558,7 @@
     </div>
     <div class="letter-body">
       <div class="scan-panel">
-        <a href="https://chrislitzkow.github.io/Litzkow-Letters/1945.June.10.Otto.Lorraine.pdf" target="_blank" class="scan-frame scan-frame-linked"><img src="https://chrislitzkow.github.io/Litzkow-Letters/thumbs/1945.June.10.Otto.Lorraine.jpg" alt="Scan of 1945.June.10.Otto.Lorraine" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block;"></a>
+        <a href="https://chrislitzkow.github.io/Litzkow-Letters/1945.June.10.Otto.Lorraine.pdf" target="_blank" class="scan-frame scan-frame-linked"><img src="https://chrislitzkow.github.io/Litzkow-Letters/thumbs/1945.June.10.Otto.Lorraine.jpg" alt="Scan of 1945.June.10.Otto.Lorraine" style="width:100%;height:auto;display:block;"></a>
       </div>
       <div class="transcription-panel">
         <div class="trans-heading">Transcription</div>
@@ -600,7 +600,7 @@
     </div>
     <div class="letter-body">
       <div class="scan-panel">
-        <a href="https://chrislitzkow.github.io/Litzkow-Letters/1945.June.11.Otto.Lorraine.PP1.pdf" target="_blank" class="scan-frame scan-frame-linked"><img src="https://chrislitzkow.github.io/Litzkow-Letters/thumbs/1945.June.11.Otto.Lorraine.PP1.jpg" alt="Scan of 1945.June.11.Otto.Lorraine.PP1" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block;"></a>
+        <a href="https://chrislitzkow.github.io/Litzkow-Letters/1945.June.11.Otto.Lorraine.PP1.pdf" target="_blank" class="scan-frame scan-frame-linked"><img src="https://chrislitzkow.github.io/Litzkow-Letters/thumbs/1945.June.11.Otto.Lorraine.PP1.jpg" alt="Scan of 1945.June.11.Otto.Lorraine.PP1" style="width:100%;height:auto;display:block;"></a>
       </div>
       <div class="transcription-panel">
         <div class="trans-heading">Transcription</div>
@@ -639,7 +639,7 @@
     </div>
     <div class="letter-body">
       <div class="scan-panel">
-        <a href="https://chrislitzkow.github.io/Litzkow-Letters/1945.June.16.Otto.Lorraine.pdf" target="_blank" class="scan-frame scan-frame-linked"><img src="https://chrislitzkow.github.io/Litzkow-Letters/thumbs/1945.June.16.Otto.Lorraine.jpg" alt="Scan of 1945.June.16.Otto.Lorraine" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block;"></a>
+        <a href="https://chrislitzkow.github.io/Litzkow-Letters/1945.June.16.Otto.Lorraine.pdf" target="_blank" class="scan-frame scan-frame-linked"><img src="https://chrislitzkow.github.io/Litzkow-Letters/thumbs/1945.June.16.Otto.Lorraine.jpg" alt="Scan of 1945.June.16.Otto.Lorraine" style="width:100%;height:auto;display:block;"></a>
       </div>
       <div class="transcription-panel">
         <div class="trans-heading">Transcription</div>
@@ -679,7 +679,7 @@
     </div>
     <div class="letter-body">
       <div class="scan-panel">
-        <a href="https://chrislitzkow.github.io/Litzkow-Letters/Unknown.Otto.Lorraine.pdf" target="_blank" class="scan-frame scan-frame-linked"><img src="https://chrislitzkow.github.io/Litzkow-Letters/thumbs/Unknown.Otto.Lorraine.jpg" alt="Scan of Unknown.Otto.Lorraine" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block;"></a>
+        <a href="https://chrislitzkow.github.io/Litzkow-Letters/Unknown.Otto.Lorraine.pdf" target="_blank" class="scan-frame scan-frame-linked"><img src="https://chrislitzkow.github.io/Litzkow-Letters/thumbs/Unknown.Otto.Lorraine.jpg" alt="Scan of Unknown.Otto.Lorraine" style="width:100%;height:auto;display:block;"></a>
       </div>
       <div class="transcription-panel">
         <div class="trans-heading">Transcription</div>
@@ -720,7 +720,7 @@
     </div>
     <div class="letter-body">
       <div class="scan-panel">
-        <a href="https://chrislitzkow.github.io/Litzkow-Letters/1949.April.30.Honker.Jim.pdf" target="_blank" class="scan-frame scan-frame-linked"><img src="https://chrislitzkow.github.io/Litzkow-Letters/thumbs/1949.April.30.Honker.Jim.jpg" alt="Scan of 1949.April.30.Honker.Jim" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block;"></a>
+        <a href="https://chrislitzkow.github.io/Litzkow-Letters/1949.April.30.Honker.Jim.pdf" target="_blank" class="scan-frame scan-frame-linked"><img src="https://chrislitzkow.github.io/Litzkow-Letters/thumbs/1949.April.30.Honker.Jim.jpg" alt="Scan of 1949.April.30.Honker.Jim" style="width:100%;height:auto;display:block;"></a>
       </div>
       <div class="transcription-panel">
         <div class="trans-heading">Transcription</div>
@@ -777,7 +777,7 @@
     </div>
     <div class="letter-body">
       <div class="scan-panel">
-        <a href="https://chrislitzkow.github.io/Litzkow-Letters/1945.June.7.Otto.Tinie.pdf" target="_blank" class="scan-frame scan-frame-linked"><img src="https://chrislitzkow.github.io/Litzkow-Letters/thumbs/1945.June.7.Otto.Tinie.jpg" alt="Scan of 1945.June.7.Otto.Tinie" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block;"></a>
+        <a href="https://chrislitzkow.github.io/Litzkow-Letters/1945.June.7.Otto.Tinie.pdf" target="_blank" class="scan-frame scan-frame-linked"><img src="https://chrislitzkow.github.io/Litzkow-Letters/thumbs/1945.June.7.Otto.Tinie.jpg" alt="Scan of 1945.June.7.Otto.Tinie" style="width:100%;height:auto;display:block;"></a>
       </div>
       <div class="transcription-panel">
         <div class="trans-heading">Transcription</div>
@@ -813,7 +813,7 @@
     </div>
     <div class="letter-body">
       <div class="scan-panel">
-        <a href="https://chrislitzkow.github.io/Litzkow-Letters/1945.June.8.Otto.Tinie.pdf" target="_blank" class="scan-frame scan-frame-linked"><img src="https://chrislitzkow.github.io/Litzkow-Letters/thumbs/1945.June.8.Otto.Tinie.jpg" alt="Scan of 1945.June.8.Otto.Tinie" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block;"></a>
+        <a href="https://chrislitzkow.github.io/Litzkow-Letters/1945.June.8.Otto.Tinie.pdf" target="_blank" class="scan-frame scan-frame-linked"><img src="https://chrislitzkow.github.io/Litzkow-Letters/thumbs/1945.June.8.Otto.Tinie.jpg" alt="Scan of 1945.June.8.Otto.Tinie" style="width:100%;height:auto;display:block;"></a>
       </div>
       <div class="transcription-panel">
         <div class="trans-heading">Transcription</div>
@@ -849,7 +849,7 @@
     </div>
     <div class="letter-body">
       <div class="scan-panel">
-        <a href="https://chrislitzkow.github.io/Litzkow-Letters/1944.June.14.Dick.Slugger.pdf" target="_blank" class="scan-frame scan-frame-linked"><img src="https://chrislitzkow.github.io/Litzkow-Letters/thumbs/1944.June.14.Dick.Slugger.jpg" alt="Scan of 1944.June.14.Dick.Slugger" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block;"></a>
+        <a href="https://chrislitzkow.github.io/Litzkow-Letters/1944.June.14.Dick.Slugger.pdf" target="_blank" class="scan-frame scan-frame-linked"><img src="https://chrislitzkow.github.io/Litzkow-Letters/thumbs/1944.June.14.Dick.Slugger.jpg" alt="Scan of 1944.June.14.Dick.Slugger" style="width:100%;height:auto;display:block;"></a>
       </div>
       <div class="transcription-panel">
         <div class="trans-heading">Transcription</div>
@@ -885,7 +885,7 @@
     </div>
     <div class="letter-body">
       <div class="scan-panel">
-        <a href="https://chrislitzkow.github.io/Litzkow-Letters/1944.July.4.Dick.Jim.pdf" target="_blank" class="scan-frame scan-frame-linked"><img src="https://chrislitzkow.github.io/Litzkow-Letters/thumbs/1944.July.4.Dick.Jim.jpg" alt="Scan of 1944.July.4.Dick.Jim" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block;"></a>
+        <a href="https://chrislitzkow.github.io/Litzkow-Letters/1944.July.4.Dick.Jim.pdf" target="_blank" class="scan-frame scan-frame-linked"><img src="https://chrislitzkow.github.io/Litzkow-Letters/thumbs/1944.July.4.Dick.Jim.jpg" alt="Scan of 1944.July.4.Dick.Jim" style="width:100%;height:auto;display:block;"></a>
       </div>
       <div class="transcription-panel">
         <div class="trans-heading">Transcription</div>
@@ -920,7 +920,7 @@
     </div>
     <div class="letter-body">
       <div class="scan-panel">
-        <a href="https://chrislitzkow.github.io/Litzkow-Letters/1944.March.30.GJCapacio.Lorraine.pdf" target="_blank" class="scan-frame scan-frame-linked"><img src="https://chrislitzkow.github.io/Litzkow-Letters/thumbs/1944.March.30.GJCapacio.Lorraine.jpg" alt="Scan of 1944.March.30.GJCapacio.Lorraine" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block;"></a>
+        <a href="https://chrislitzkow.github.io/Litzkow-Letters/1944.March.30.GJCapacio.Lorraine.pdf" target="_blank" class="scan-frame scan-frame-linked"><img src="https://chrislitzkow.github.io/Litzkow-Letters/thumbs/1944.March.30.GJCapacio.Lorraine.jpg" alt="Scan of 1944.March.30.GJCapacio.Lorraine" style="width:100%;height:auto;display:block;"></a>
       </div>
       <div class="transcription-panel">
         <div class="trans-heading">Transcription</div>
@@ -955,7 +955,7 @@
     </div>
     <div class="letter-body">
       <div class="scan-panel">
-        <a href="https://chrislitzkow.github.io/Litzkow-Letters/Unknown.Unknown.Lorraine.pdf" target="_blank" class="scan-frame scan-frame-linked"><img src="https://chrislitzkow.github.io/Litzkow-Letters/thumbs/Unknown.Unknown.Lorraine.jpg" alt="Scan of Unknown.Unknown.Lorraine" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block;"></a>
+        <a href="https://chrislitzkow.github.io/Litzkow-Letters/Unknown.Unknown.Lorraine.pdf" target="_blank" class="scan-frame scan-frame-linked"><img src="https://chrislitzkow.github.io/Litzkow-Letters/thumbs/Unknown.Unknown.Lorraine.jpg" alt="Scan of Unknown.Unknown.Lorraine" style="width:100%;height:auto;display:block;"></a>
       </div>
       <div class="transcription-panel">
         <div class="trans-heading">Transcription</div>
@@ -1015,7 +1015,7 @@
     </div>
     <div class="letter-body">
       <div class="scan-panel">
-        <a href="https://chrislitzkow.github.io/Litzkow-Letters/1943.December.9.Otto.Lorraine.pdf" target="_blank" class="scan-frame scan-frame-linked"><img src="https://chrislitzkow.github.io/Litzkow-Letters/thumbs/1943.December.9.Otto.Lorraine.jpg" alt="Scan of 1943.December.9.Otto.Lorraine" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block;"></a>
+        <a href="https://chrislitzkow.github.io/Litzkow-Letters/1943.December.9.Otto.Lorraine.pdf" target="_blank" class="scan-frame scan-frame-linked"><img src="https://chrislitzkow.github.io/Litzkow-Letters/thumbs/1943.December.9.Otto.Lorraine.jpg" alt="Scan of 1943.December.9.Otto.Lorraine" style="width:100%;height:auto;display:block;"></a>
       </div>
       <div class="transcription-panel">
         <div class="trans-heading">Transcription</div>
@@ -1045,7 +1045,7 @@
     </div>
     <div class="letter-body">
       <div class="scan-panel">
-        <a href="https://chrislitzkow.github.io/Litzkow-Letters/1944.January.4.Otto.Jim.pdf" target="_blank" class="scan-frame scan-frame-linked"><img src="https://chrislitzkow.github.io/Litzkow-Letters/thumbs/1944.January.4.Otto.Jim.jpg" alt="Scan of 1944.January.4.Otto.Jim" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block;"></a>
+        <a href="https://chrislitzkow.github.io/Litzkow-Letters/1944.January.4.Otto.Jim.pdf" target="_blank" class="scan-frame scan-frame-linked"><img src="https://chrislitzkow.github.io/Litzkow-Letters/thumbs/1944.January.4.Otto.Jim.jpg" alt="Scan of 1944.January.4.Otto.Jim" style="width:100%;height:auto;display:block;"></a>
       </div>
       <div class="transcription-panel">
         <div class="trans-heading">Transcription</div>
@@ -1075,7 +1075,7 @@
     </div>
     <div class="letter-body">
       <div class="scan-panel">
-        <a href="https://chrislitzkow.github.io/Litzkow-Letters/1944.March.1.Otto.Lorraine.pdf" target="_blank" class="scan-frame scan-frame-linked"><img src="https://chrislitzkow.github.io/Litzkow-Letters/thumbs/1944.March.1.Otto.Lorraine.jpg" alt="Scan of 1944.March.1.Otto.Lorraine" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block;"></a>
+        <a href="https://chrislitzkow.github.io/Litzkow-Letters/1944.March.1.Otto.Lorraine.pdf" target="_blank" class="scan-frame scan-frame-linked"><img src="https://chrislitzkow.github.io/Litzkow-Letters/thumbs/1944.March.1.Otto.Lorraine.jpg" alt="Scan of 1944.March.1.Otto.Lorraine" style="width:100%;height:auto;display:block;"></a>
       </div>
       <div class="transcription-panel">
         <div class="trans-heading">Transcription</div>
@@ -1110,7 +1110,7 @@
     </div>
     <div class="letter-body">
       <div class="scan-panel">
-        <a href="https://chrislitzkow.github.io/Litzkow-Letters/Context.Mil.Christmas.Menu.pdf" target="_blank" class="scan-frame scan-frame-linked"><img src="https://chrislitzkow.github.io/Litzkow-Letters/thumbs/Context.Mil.Christmas.Menu.jpg" alt="Scan of Context.Mil.Christmas.Menu" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block;"></a>
+        <a href="https://chrislitzkow.github.io/Litzkow-Letters/Context.Mil.Christmas.Menu.pdf" target="_blank" class="scan-frame scan-frame-linked"><img src="https://chrislitzkow.github.io/Litzkow-Letters/thumbs/Context.Mil.Christmas.Menu.jpg" alt="Scan of Context.Mil.Christmas.Menu" style="width:100%;height:auto;display:block;"></a>
       </div>
       <div class="transcription-panel">
         <div class="trans-heading">Transcription</div>
@@ -1152,7 +1152,7 @@
     </div>
     <div class="letter-body">
       <div class="scan-panel">
-        <a href="https://chrislitzkow.github.io/Litzkow-Letters/Context.Mil.Game.Scorecard.pdf" target="_blank" class="scan-frame scan-frame-linked"><img src="https://chrislitzkow.github.io/Litzkow-Letters/thumbs/Context.Mil.Game.Scorecard.jpg" alt="Scan of Context.Mil.Game.Scorecard" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block;"></a>
+        <a href="https://chrislitzkow.github.io/Litzkow-Letters/Context.Mil.Game.Scorecard.pdf" target="_blank" class="scan-frame scan-frame-linked"><img src="https://chrislitzkow.github.io/Litzkow-Letters/thumbs/Context.Mil.Game.Scorecard.jpg" alt="Scan of Context.Mil.Game.Scorecard" style="width:100%;height:auto;display:block;"></a>
       </div>
       <div class="transcription-panel">
         <div class="trans-heading">Transcription</div>
@@ -1186,7 +1186,7 @@
     </div>
     <div class="letter-body">
       <div class="scan-panel">
-        <a href="https://chrislitzkow.github.io/Litzkow-Letters/Context.Mil.Address.List.pdf" target="_blank" class="scan-frame scan-frame-linked"><img src="https://chrislitzkow.github.io/Litzkow-Letters/thumbs/Context.Mil.Address.List.jpg" alt="Scan of Context.Mil.Address.List" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block;"></a>
+        <a href="https://chrislitzkow.github.io/Litzkow-Letters/Context.Mil.Address.List.pdf" target="_blank" class="scan-frame scan-frame-linked"><img src="https://chrislitzkow.github.io/Litzkow-Letters/thumbs/Context.Mil.Address.List.jpg" alt="Scan of Context.Mil.Address.List" style="width:100%;height:auto;display:block;"></a>
       </div>
       <div class="transcription-panel">
         <div class="trans-heading">About This Document</div>
@@ -1222,7 +1222,7 @@
     </div>
     <div class="letter-body">
       <div class="scan-panel">
-        <a href="https://chrislitzkow.github.io/Litzkow-Letters/1930.September.16.Context.Mil.Seabees.Program.pdf" target="_blank" class="scan-frame scan-frame-linked"><img src="https://chrislitzkow.github.io/Litzkow-Letters/thumbs/1930.September.16.Context.Mil.Seabees.Program.jpg" alt="Scan of 1930.September.16.Context.Mil.Seabees.Program" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block;"></a>
+        <a href="https://chrislitzkow.github.io/Litzkow-Letters/1930.September.16.Context.Mil.Seabees.Program.pdf" target="_blank" class="scan-frame scan-frame-linked"><img src="https://chrislitzkow.github.io/Litzkow-Letters/thumbs/1930.September.16.Context.Mil.Seabees.Program.jpg" alt="Scan of 1930.September.16.Context.Mil.Seabees.Program" style="width:100%;height:auto;display:block;"></a>
       </div>
       <div class="transcription-panel">
         <div class="trans-heading">Program</div>
@@ -1272,7 +1272,7 @@
     </div>
     <div class="letter-body">
       <div class="scan-panel">
-        <a href="https://chrislitzkow.github.io/Litzkow-Letters/Context.Home.Jenkins.Prices.pdf" target="_blank" class="scan-frame scan-frame-linked"><img src="https://chrislitzkow.github.io/Litzkow-Letters/thumbs/Context.Home.Jenkins.Prices.jpg" alt="Scan of Context.Home.Jenkins.Prices" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block;"></a>
+        <a href="https://chrislitzkow.github.io/Litzkow-Letters/Context.Home.Jenkins.Prices.pdf" target="_blank" class="scan-frame scan-frame-linked"><img src="https://chrislitzkow.github.io/Litzkow-Letters/thumbs/Context.Home.Jenkins.Prices.jpg" alt="Scan of Context.Home.Jenkins.Prices" style="width:100%;height:auto;display:block;"></a>
       </div>
       <div class="transcription-panel">
         <div class="trans-heading">About This Document</div>
@@ -1308,7 +1308,7 @@
     </div>
     <div class="letter-body">
       <div class="scan-panel">
-        <a href="https://chrislitzkow.github.io/Litzkow-Letters/1944.1945.Coral.Bits.pdf" target="_blank" class="scan-frame scan-frame-linked"><img src="https://chrislitzkow.github.io/Litzkow-Letters/thumbs/1944.1945.Coral.Bits.jpg" alt="Scan of 1944.1945.Coral.Bits" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block;"></a>
+        <a href="https://chrislitzkow.github.io/Litzkow-Letters/1944.1945.Coral.Bits.pdf" target="_blank" class="scan-frame scan-frame-linked"><img src="https://chrislitzkow.github.io/Litzkow-Letters/thumbs/1944.1945.Coral.Bits.jpg" alt="Scan of 1944.1945.Coral.Bits" style="width:100%;height:auto;display:block;"></a>
       </div>
       <div class="transcription-panel">
         <div class="trans-heading">About This Document</div>
@@ -1352,7 +1352,7 @@
     </div>
     <div class="letter-body">
       <div class="scan-panel">
-        <a href="https://chrislitzkow.github.io/Litzkow-Letters/Context.Military.Shellback.Certificate.pdf" target="_blank" class="scan-frame scan-frame-linked"><img src="https://chrislitzkow.github.io/Litzkow-Letters/thumbs/Context.Military.Shellback.Certificate.jpg" alt="Scan of Context.Military.Shellback.Certificate" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block;"></a>
+        <a href="https://chrislitzkow.github.io/Litzkow-Letters/Context.Military.Shellback.Certificate.pdf" target="_blank" class="scan-frame scan-frame-linked"><img src="https://chrislitzkow.github.io/Litzkow-Letters/thumbs/Context.Military.Shellback.Certificate.jpg" alt="Scan of Context.Military.Shellback.Certificate" style="width:100%;height:auto;display:block;"></a>
       </div>
       <div class="transcription-panel">
         <div class="trans-heading">About This Document</div>
@@ -1394,7 +1394,7 @@
     </div>
     <div class="letter-body">
       <div class="scan-panel">
-        <a href="https://chrislitzkow.github.io/Litzkow-Letters/1945.February.28.Context.Mil.Jim.Guard.Benefits.pdf" target="_blank" class="scan-frame scan-frame-linked"><img src="https://chrislitzkow.github.io/Litzkow-Letters/thumbs/1945.February.28.Context.Mil.Jim.Guard.Benefits.jpg" alt="Scan of 1945.February.28.Context.Mil.Jim.Guard.Benefits" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block;"></a>
+        <a href="https://chrislitzkow.github.io/Litzkow-Letters/1945.February.28.Context.Mil.Jim.Guard.Benefits.pdf" target="_blank" class="scan-frame scan-frame-linked"><img src="https://chrislitzkow.github.io/Litzkow-Letters/thumbs/1945.February.28.Context.Mil.Jim.Guard.Benefits.jpg" alt="Scan of 1945.February.28.Context.Mil.Jim.Guard.Benefits" style="width:100%;height:auto;display:block;"></a>
       </div>
       <div class="transcription-panel">
         <div class="trans-heading">About This Document</div>
@@ -1436,7 +1436,7 @@
   <div class="context-block">
     <h3>James Robert Litzkow — US Army Air Forces</h3>
     <p>James Robert Litzkow (June 6, 1926 – May 29, 1980) was born in Sauk County, Wisconsin — eighteen years old when his father enlisted, nineteen when he was inducted himself. Before the Army, he worked at Badger Ordnance Works in Baraboo, served briefly in the Wisconsin State Guard, and attended Madison West High School. He stood six feet three inches tall, with grey eyes and brown hair. His Army Serial Number was 16141259.</p>
-    <p>James trained at Bryan Army Air Field and Amarillo Army Air Field in Texas before going overseas. His letters home are marked by a dry humor and easy affection — signing off as "Slugger," writing to his "Hi Mom." He was brought home on emergency furlough in late August 1945 when Lorraine underwent surgery in Madison; the war ended weeks later. He married Helen Litzkow, and together they had Christopher Litzkow's father. James died on May 29, 1980. He was 53 years old.</p>
+    <p>James trained at Bryan Army Air Field and Amarillo Army Air Field in Texas before going overseas. His letters home are marked by a dry humor and easy affection — signing off as "Slugger," writing to his "Hi Mom." He was brought home on emergency furlough in late August 1945 when Lorraine underwent surgery in Madison; the war ended weeks later. James died on May 29, 1980. He was 53 years old.</p>
     <p style="margin-top:10px; font-style:italic; color:var(--sepia);">The documents here cover his enlistment, training, and the emergency that brought him home — a glimpse, not a complete account.</p>
   </div>
 
@@ -1454,7 +1454,7 @@
     </div>
     <div class="letter-body">
       <div class="scan-panel">
-        <a href="https://chrislitzkow.github.io/Litzkow-Letters/1945.January.9.Jim.Discharge.Guard.pdf" target="_blank" class="scan-frame scan-frame-linked"><img src="https://chrislitzkow.github.io/Litzkow-Letters/thumbs/1945.January.9.Jim.Discharge.Guard.jpg" alt="Scan of 1945.January.9.Jim.Discharge.Guard" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block;"></a>
+        <a href="https://chrislitzkow.github.io/Litzkow-Letters/1945.January.9.Jim.Discharge.Guard.pdf" target="_blank" class="scan-frame scan-frame-linked"><img src="https://chrislitzkow.github.io/Litzkow-Letters/thumbs/1945.January.9.Jim.Discharge.Guard.jpg" alt="Scan of 1945.January.9.Jim.Discharge.Guard" style="width:100%;height:auto;display:block;"></a>
       </div>
       <div class="transcription-panel">
         <div class="trans-heading">Transcription</div>
@@ -1498,7 +1498,7 @@
     </div>
     <div class="letter-body">
       <div class="scan-panel">
-        <a href="https://chrislitzkow.github.io/Litzkow-Letters/1944.November.30.Jim.Life.Insurance.pdf" target="_blank" class="scan-frame scan-frame-linked"><img src="https://chrislitzkow.github.io/Litzkow-Letters/thumbs/1944.November.30.Jim.Life.Insurance.jpg" alt="Scan of 1944.November.30.Jim.Life.Insurance" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block;"></a>
+        <a href="https://chrislitzkow.github.io/Litzkow-Letters/1944.November.30.Jim.Life.Insurance.pdf" target="_blank" class="scan-frame scan-frame-linked"><img src="https://chrislitzkow.github.io/Litzkow-Letters/thumbs/1944.November.30.Jim.Life.Insurance.jpg" alt="Scan of 1944.November.30.Jim.Life.Insurance" style="width:100%;height:auto;display:block;"></a>
       </div>
       <div class="transcription-panel">
         <div class="trans-heading">About This Document</div>
@@ -1542,7 +1542,7 @@
     </div>
     <div class="letter-body">
       <div class="scan-panel">
-        <a href="https://chrislitzkow.github.io/Litzkow-Letters/1944.Sept.4.Jim.Paystub.pdf" target="_blank" class="scan-frame scan-frame-linked"><img src="https://chrislitzkow.github.io/Litzkow-Letters/thumbs/1944.Sept.4.Jim.Paystub.jpg" alt="Scan of 1944.Sept.4.Jim.Paystub" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block;"></a>
+        <a href="https://chrislitzkow.github.io/Litzkow-Letters/1944.Sept.4.Jim.Paystub.pdf" target="_blank" class="scan-frame scan-frame-linked"><img src="https://chrislitzkow.github.io/Litzkow-Letters/thumbs/1944.Sept.4.Jim.Paystub.jpg" alt="Scan of 1944.Sept.4.Jim.Paystub" style="width:100%;height:auto;display:block;"></a>
       </div>
       <div class="transcription-panel">
         <div class="trans-heading">Transcription</div>
@@ -1588,7 +1588,7 @@
     </div>
     <div class="letter-body">
       <div class="scan-panel">
-        <a href="https://chrislitzkow.github.io/Litzkow-Letters/1945.August.27.Jim.Medical.Note.pdf" target="_blank" class="scan-frame scan-frame-linked"><img src="https://chrislitzkow.github.io/Litzkow-Letters/thumbs/1945.August.27.Jim.Medical.Note.jpg" alt="Scan of 1945.August.27.Jim.Medical.Note" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block;"></a>
+        <a href="https://chrislitzkow.github.io/Litzkow-Letters/1945.August.27.Jim.Medical.Note.pdf" target="_blank" class="scan-frame scan-frame-linked"><img src="https://chrislitzkow.github.io/Litzkow-Letters/thumbs/1945.August.27.Jim.Medical.Note.jpg" alt="Scan of 1945.August.27.Jim.Medical.Note" style="width:100%;height:auto;display:block;"></a>
       </div>
       <div class="transcription-panel">
         <div class="trans-heading">Transcription</div>
@@ -1633,7 +1633,7 @@
     </div>
     <div class="letter-body">
       <div class="scan-panel">
-        <a href="https://chrislitzkow.github.io/Litzkow-Letters/Unknown.Mudder.pdf" target="_blank" class="scan-frame scan-frame-linked"><img src="https://chrislitzkow.github.io/Litzkow-Letters/thumbs/Unknown.Mudder.jpg" alt="Scan of Unknown.Mudder" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block;"></a>
+        <a href="https://chrislitzkow.github.io/Litzkow-Letters/Unknown.Mudder.pdf" target="_blank" class="scan-frame scan-frame-linked"><img src="https://chrislitzkow.github.io/Litzkow-Letters/thumbs/Unknown.Mudder.jpg" alt="Scan of Unknown.Mudder" style="width:100%;height:auto;display:block;"></a>
       </div>
       <div class="transcription-panel">
         <div class="trans-heading">Transcription (partial)</div>
@@ -1690,7 +1690,7 @@
     </div>
     <div class="letter-body">
       <div class="scan-panel">
-        <a href="https://chrislitzkow.github.io/Litzkow-Letters/Carpenters.Union.Letter.pdf" target="_blank" class="scan-frame scan-frame-linked"><img src="https://chrislitzkow.github.io/Litzkow-Letters/thumbs/Carpenters.Union.Letter.jpg" alt="Scan of Carpenters.Union.Letter" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block;"></a>
+        <a href="https://chrislitzkow.github.io/Litzkow-Letters/Carpenters.Union.Letter.pdf" target="_blank" class="scan-frame scan-frame-linked"><img src="https://chrislitzkow.github.io/Litzkow-Letters/thumbs/Carpenters.Union.Letter.jpg" alt="Scan of Carpenters.Union.Letter" style="width:100%;height:auto;display:block;"></a>
       </div>
       <div class="transcription-panel">
         <div class="trans-heading">About This Document</div>
@@ -1750,7 +1750,7 @@
     </div>
     <div class="letter-body">
       <div class="scan-panel">
-        <a href="https://chrislitzkow.github.io/Litzkow-Letters/Context.Mil.Gals.Left.Behind.pdf" target="_blank" class="scan-frame scan-frame-linked"><img src="https://chrislitzkow.github.io/Litzkow-Letters/thumbs/Context.Mil.Gals.Left.Behind.jpg" alt="Scan of Context.Mil.Gals.Left.Behind" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block;"></a>
+        <a href="https://chrislitzkow.github.io/Litzkow-Letters/Context.Mil.Gals.Left.Behind.pdf" target="_blank" class="scan-frame scan-frame-linked"><img src="https://chrislitzkow.github.io/Litzkow-Letters/thumbs/Context.Mil.Gals.Left.Behind.jpg" alt="Scan of Context.Mil.Gals.Left.Behind" style="width:100%;height:auto;display:block;"></a>
       </div>
       <div class="transcription-panel">
         <div class="trans-heading">Transcription</div>
@@ -1811,7 +1811,7 @@
     </div>
     <div class="letter-body">
       <div class="scan-panel">
-        <a href="https://chrislitzkow.github.io/Litzkow-Letters/1944.June.27.Lillian.Lorraine.pdf" target="_blank" class="scan-frame scan-frame-linked"><img src="https://chrislitzkow.github.io/Litzkow-Letters/thumbs/1944.June.27.Lillian.Lorraine.jpg" alt="Scan of 1944.June.27.Lillian.Lorraine" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block;"></a>
+        <a href="https://chrislitzkow.github.io/Litzkow-Letters/1944.June.27.Lillian.Lorraine.pdf" target="_blank" class="scan-frame scan-frame-linked"><img src="https://chrislitzkow.github.io/Litzkow-Letters/thumbs/1944.June.27.Lillian.Lorraine.jpg" alt="Scan of 1944.June.27.Lillian.Lorraine" style="width:100%;height:auto;display:block;"></a>
       </div>
       <div class="transcription-panel">
         <div class="trans-heading">Transcription</div>
@@ -1852,7 +1852,7 @@
     </div>
     <div class="letter-body">
       <div class="scan-panel">
-        <a href="https://chrislitzkow.github.io/Litzkow-Letters/1945.July.4.Myra.Lorraine.pdf" target="_blank" class="scan-frame scan-frame-linked"><img src="https://chrislitzkow.github.io/Litzkow-Letters/thumbs/1945.July.4.Myra.Lorraine.jpg" alt="Scan of 1945.July.4.Myra.Lorraine" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block;"></a>
+        <a href="https://chrislitzkow.github.io/Litzkow-Letters/1945.July.4.Myra.Lorraine.pdf" target="_blank" class="scan-frame scan-frame-linked"><img src="https://chrislitzkow.github.io/Litzkow-Letters/thumbs/1945.July.4.Myra.Lorraine.jpg" alt="Scan of 1945.July.4.Myra.Lorraine" style="width:100%;height:auto;display:block;"></a>
       </div>
       <div class="transcription-panel">
         <div class="trans-heading">Transcription</div>
@@ -1893,7 +1893,7 @@
     </div>
     <div class="letter-body">
       <div class="scan-panel">
-        <a href="https://chrislitzkow.github.io/Litzkow-Letters/Unknown.Unknown.OscarMayer.pdf" target="_blank" class="scan-frame scan-frame-linked"><img src="https://chrislitzkow.github.io/Litzkow-Letters/thumbs/Unknown.Unknown.OscarMayer.jpg" alt="Scan of Unknown.Unknown.OscarMayer" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block;"></a>
+        <a href="https://chrislitzkow.github.io/Litzkow-Letters/Unknown.Unknown.OscarMayer.pdf" target="_blank" class="scan-frame scan-frame-linked"><img src="https://chrislitzkow.github.io/Litzkow-Letters/thumbs/Unknown.Unknown.OscarMayer.jpg" alt="Scan of Unknown.Unknown.OscarMayer" style="width:100%;height:auto;display:block;"></a>
       </div>
       <div class="transcription-panel">
         <div class="trans-heading">Transcription</div>
@@ -1934,7 +1934,7 @@
     </div>
     <div class="letter-body">
       <div class="scan-panel">
-        <a href="https://chrislitzkow.github.io/Litzkow-Letters/1945.April.10.Mortgage.Satisfaction.pdf" target="_blank" class="scan-frame scan-frame-linked"><img src="https://chrislitzkow.github.io/Litzkow-Letters/thumbs/1945.April.10.Mortgage.Satisfaction.jpg" alt="Scan of 1945.April.10.Mortgage.Satisfaction" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block;"></a>
+        <a href="https://chrislitzkow.github.io/Litzkow-Letters/1945.April.10.Mortgage.Satisfaction.pdf" target="_blank" class="scan-frame scan-frame-linked"><img src="https://chrislitzkow.github.io/Litzkow-Letters/thumbs/1945.April.10.Mortgage.Satisfaction.jpg" alt="Scan of 1945.April.10.Mortgage.Satisfaction" style="width:100%;height:auto;display:block;"></a>
       </div>
       <div class="transcription-panel">
         <div class="trans-heading">About This Document</div>
@@ -1970,7 +1970,7 @@
     </div>
     <div class="letter-body">
       <div class="scan-panel">
-        <a href="https://chrislitzkow.github.io/Litzkow-Letters/1945.January.20.Otto.Water.Bill.pdf" target="_blank" class="scan-frame scan-frame-linked"><img src="https://chrislitzkow.github.io/Litzkow-Letters/thumbs/1945.January.20.Otto.Water.Bill.jpg" alt="Scan of 1945.January.20.Otto.Water.Bill" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block;"></a>
+        <a href="https://chrislitzkow.github.io/Litzkow-Letters/1945.January.20.Otto.Water.Bill.pdf" target="_blank" class="scan-frame scan-frame-linked"><img src="https://chrislitzkow.github.io/Litzkow-Letters/thumbs/1945.January.20.Otto.Water.Bill.jpg" alt="Scan of 1945.January.20.Otto.Water.Bill" style="width:100%;height:auto;display:block;"></a>
       </div>
       <div class="transcription-panel">
         <div class="trans-heading">About This Document</div>
@@ -2012,7 +2012,7 @@
     </div>
     <div class="letter-body">
       <div class="scan-panel">
-        <a href="https://chrislitzkow.github.io/Litzkow-Letters/1949.April.22.Context.Home.Dress.Receipt.pdf" target="_blank" class="scan-frame scan-frame-linked"><img src="https://chrislitzkow.github.io/Litzkow-Letters/thumbs/1949.April.22.Context.Home.Dress.Receipt.jpg" alt="Scan of 1949.April.22.Context.Home.Dress.Receipt" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block;"></a>
+        <a href="https://chrislitzkow.github.io/Litzkow-Letters/1949.April.22.Context.Home.Dress.Receipt.pdf" target="_blank" class="scan-frame scan-frame-linked"><img src="https://chrislitzkow.github.io/Litzkow-Letters/thumbs/1949.April.22.Context.Home.Dress.Receipt.jpg" alt="Scan of 1949.April.22.Context.Home.Dress.Receipt" style="width:100%;height:auto;display:block;"></a>
       </div>
       <div class="transcription-panel">
         <div class="trans-heading">About This Document</div>
@@ -2054,7 +2054,7 @@
     </div>
     <div class="letter-body">
       <div class="scan-panel">
-        <a href="https://chrislitzkow.github.io/Litzkow-Letters/1983.July.25.Lorraine.Obituary.pdf" target="_blank" class="scan-frame scan-frame-linked"><img src="https://chrislitzkow.github.io/Litzkow-Letters/thumbs/1983.July.25.Lorraine.Obituary.jpg" alt="Scan of 1983.July.25.Lorraine.Obituary" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block;"></a>
+        <a href="https://chrislitzkow.github.io/Litzkow-Letters/1983.July.25.Lorraine.Obituary.pdf" target="_blank" class="scan-frame scan-frame-linked"><img src="https://chrislitzkow.github.io/Litzkow-Letters/thumbs/1983.July.25.Lorraine.Obituary.jpg" alt="Scan of 1983.July.25.Lorraine.Obituary" style="width:100%;height:auto;display:block;"></a>
       </div>
       <div class="transcription-panel">
         <div class="trans-heading">About This Document</div>
