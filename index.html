@@ -134,11 +134,11 @@
     .letter-status { font-family: 'Courier Prime', monospace; font-size: 0.65rem; letter-spacing: 0.1em; padding: 3px 10px; border: 1px solid; }
     .letter-status.complete   { color: #6aab6a; border-color: #6aab6a; }
     .letter-status.incomplete { color: var(--red); border-color: var(--red); }
-    .letter-body { display: grid; grid-template-columns: 2fr 3fr; align-items: start; }
+    .letter-body { display: grid; grid-template-columns: auto 1fr; align-items: start; }
     @media (max-width: 680px) { .letter-body { grid-template-columns: 1fr; } }
 
     /* ── Scan panel ── */
-    .scan-panel { border-right: 1px solid var(--rule); padding: 0; background: #f0e8d0; }
+    .scan-panel { border-right: 1px solid var(--rule); padding: 0; background: #f0e8d0; width: fit-content; max-width: 45%; }
     .scan-frame { width: 100%; position: relative; overflow: hidden; line-height: 0; }
     .scan-sim { width: 100%; height: 100%; background: linear-gradient(160deg,#f0e8d0 60%,#e8dcc0 100%); display: flex; flex-direction: column; padding: 20px; gap: 6px; }
     .sim-date { font-family: 'Courier Prime', monospace; font-size: 0.75rem; text-align: right; color: #5a4a2a; margin-bottom: 8px; }
